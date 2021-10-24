@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,800;1,200&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(to bottom right, #004, #000000);
+    display: grid;
+    place-content: center;
+    width: 100%;
+}
+
+.container{
+    height: 500px;
+    width: 100%;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, .25);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, .1);
+    padding: 5rem;
+    display: grid;
+    place-content: center;
+}
+
+h1{
+    font-family: "Nunito";
+    color: white;
+    font-weight: 600;
+    font-size: 3rem;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: capitalize;
+    background: rgba(0, 0, 0, .5);
+    border-radius: 5px;
+    padding: 1rem 0;
+}
+
+.weather-card{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.weather-card .user-input{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: .5rem;
+}
+
+#user-location,
+#search{
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: inherit;
+    transition: all .3s ease;
+}
+
+#user-location{
+    width: 90%;
+    height: 40px;
+    padding: 0 1rem;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    letter-spacing: .1rem;
+    font-family: "Nunito";
+    background: rgba(255, 255, 255, .6);
+    border-radius: 25px;
+    box-shadow: -1px 1px 5px rgba(255, 255, 255, .1);
+}
+
+#user-location:focus{
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+
+#search{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    color: white;
+    background: rgba(255, 255, 255, .6);
+    text-align: center;
+    cursor: pointer;
+}
+
+#search i{
+    pointer-events: none;
+}
+
+#search:hover{
+    background: rgba(255, 255, 255, .8);
+}
+
+.output{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    background: rgba(0, 0, 0, .5);
+    padding: 2rem .5rem;
+    border-radius: 10px;
+}
+
+h3.city{
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, .7);
+    font-family: "Nunito";
+}
+
+.spl{
+    color: white;
+    text-transform: uppercase;
+}
+
+p{
+    font-family: "Nunito";
+    margin-top: 1rem;
+}
+
+.temp{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.weather-description{
+    margin-left: 2rem;
+    font-size: 1.5rem;
+}
+

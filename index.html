@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.23.0/axios.min.js"
+      integrity="sha512-Idr7xVNnMWCsgBQscTSCivBNWWH30oo/tzYORviOCrLKmBaRxRflm2miNhTFJNVmXvCtzgms5nlJF4az2hiGnA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Get the Weather of Your City</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-card">
+        <h1>Get weather of your city</h1>
+        <div class="user-input">
+          <input
+            placeholder="Enter your city name"
+            type="text"
+            name="user-location"
+            id="user-location"
+          />
+          <button id="search"><i class="fas fa-search"></i></button>
+        </div>
+
+        <div class="output">
+          <h3 class="city">Weather in <span class="spl"></span></h3>
+          <p class="weather-info">
+            <span class="temp" id="temp"
+              ><sup>o</sup> <span class="unit">C</span></span
+            >
+            <span class="weather-description"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
